@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Кнопка -->
+    <button 
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: purple; color: gold; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;" 
+        onclick="onClickButton(this)">Push on me!</button>
+
+    <!-- Модальное окно с затемнением -->
+    <div class="overlay" id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; z-index: 1000;">
+        <div class="modal" style="background-color: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); max-width: 400px; width: 80%;">
+            <img src="6808917_emoji_emoticon_emotion_expression_sad face_icon.png" alt="Sad Icon" style="width: 50px; height: 50px;">
+            <p style="margin: 15px 0; font-size: 18px; color: #333;">Ты заколебал нажимать! 😞</p>
+            <button class="close-btn" onclick="closeModal()" style="background-color: #FF0000; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="js-11.1 AI Button.js"></script>
+</body>
+</html>
